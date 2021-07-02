@@ -1,0 +1,19 @@
+levi@DESKTOP-FHLIFTU:/mnt/c/users/user/AIN/sypr/uebung/github/otp_cat$ ls
+Makefile  cat.c  file.txt  key.txt  otp.c
+levi@DESKTOP-FHLIFTU:/mnt/c/users/user/AIN/sypr/uebung/github/otp_cat$ make
+gcc -g -W -Wall -std=c11 -pedantic -MM cat.c > depend2
+gcc -g -W -Wall -std=c11 -pedantic -MM otp.c > depend1
+gcc -g -W -Wall -std=c11 -pedantic -c otp.c -o otp.o
+gcc -g -W -Wall -std=c11 -pedantic otp.o -o otp
+gcc -g -W -Wall -std=c11 -pedantic -c cat.c -o cat.o
+gcc -g -W -Wall -std=c11 -pedantic cat.o -o cat
+levi@DESKTOP-FHLIFTU:/mnt/c/users/user/AIN/sypr/uebung/github/otp_cat$ ./otp file.txt key.txt crypted.txt
+levi@DESKTOP-FHLIFTU:/mnt/c/users/user/AIN/sypr/uebung/github/otp_cat$ ./cat crypted.txt
+Oa"SHKST
+levi@DESKTOP-FHLIFTU:/mnt/c/users/user/AIN/sypr/uebung/github/otp_cat$ ./otp crypted.txt key.txt encrypted.txt
+levi@DESKTOP-FHLIFTU:/mnt/c/users/user/AIN/sypr/uebung/github/otp_cat$ ./cat encrypted.txt
+Greetings!
+How are you?
+levi@DESKTOP-FHLIFTU:/mnt/c/users/user/AIN/sypr/uebung/github/otp_cat$ ls
+Makefile  cat  cat.c  cat.o  crypted.txt  depend1  depend2  encrypted.txt  file.txt  key.txt  otp  otp.c  otp.o
+levi@DESKTOP-FHLIFTU:/mnt/c/users/user/AIN/sypr/uebung/github/otp_cat$

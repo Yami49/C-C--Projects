@@ -1,0 +1,3 @@
+wuerfeltest.o: wuerfeltest.c wuerfel.h quadrat.h
+wuerfel.o: wuerfel.c wuerfel.h quadrat.h
+quadrat.o: quadrat.c quadrat.h
